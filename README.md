@@ -34,7 +34,7 @@ An engaging breakout-style game implementation using ESP32 microcontroller with 
 - **Output**: Quadrature signals (A & B channels)
 - **Resolution**: Configurable via software scaling
 - **Function**: Paddle position control
-- **DC"": 5-24V
+- **DC**: 5-24V
 
 ### Software Libraries
 
