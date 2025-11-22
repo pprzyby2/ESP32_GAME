@@ -31,18 +31,6 @@ void setup() {
   // Clear the buffer
   display.clearDisplay();
 
-  // Draw text
-  display.setTextSize(1);
-  display.setTextColor(SSD1322_WHITE);
-  display.setCursor(0,0);
-  display.println("Hello ESP32!");
-
-  // Draw a rectangle
-  display.drawRect(10, 20, 100, 30, SSD1322_WHITE);
-
-  // Draw a filled circle
-  display.fillCircle(64, 40, 10, SSD1322_WHITE);
-
   // Update the display to show all changes
   display.display();
 
@@ -65,6 +53,16 @@ void loop() {
     display.clearDisplay();
     display.setTextSize(3);
     display.println("Game Over");
+    display.display();
+    return;
+  }
+  if (speed <= 40) {
+    display.clearDisplay();
+    display.setTextSize(2);
+    display.setCursor(37, 10);
+    display.println("ZWYCIEZTWO!");
+    display.setCursor(37, 30);
+    display.println("Uzyj kodu: 1234");
     display.display();
     return;
   }
